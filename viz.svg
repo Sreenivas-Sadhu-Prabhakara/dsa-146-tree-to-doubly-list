@@ -1,0 +1,73 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="567" viewBox="0 0 760 567" role="img" aria-label="Step-by-step visual walkthrough">
+<defs><marker id="arr" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto"><path d="M0,0 L7,3 L0,6 z" fill="context-stroke"/></marker></defs>
+<rect x="1.0" y="1.0" width="758.0" height="565.0" rx="10" fill="#ffffff" stroke="#e2e8f0" stroke-width="1.2"/>
+<text x="24.0" y="34.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="17" fill="#1e293b" text-anchor="start" font-weight="600">BST to Doubly Linked List — inorder with a trailing pointer</text>
+<circle cx="35.0" cy="74.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="78.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">1</text>
+<text x="56.0" y="79.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Rewire a BST into a sorted circular doubly-linked list IN PLACE: Left becomes prev,</text>
+<text x="56.0" y="98.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Right becomes next.</text>
+<line x1="380.0" y1="150.0" x2="202.0" y2="180.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="380.0" y1="150.0" x2="558.0" y2="180.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="202.0" y1="212.0" x2="113.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="202.0" y1="212.0" x2="291.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="558.0" y1="212.0" x2="469.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<line x1="558.0" y1="212.0" x2="647.0" y2="242.0" stroke="#94a3b8" stroke-width="1.3"/>
+<circle cx="380.0" cy="134.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="380.0" y="139.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">10</text>
+<circle cx="202.0" cy="196.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="202.0" y="201.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">6</text>
+<circle cx="558.0" cy="196.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="558.0" y="201.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">14</text>
+<circle cx="113.0" cy="258.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="113.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">4</text>
+<circle cx="291.0" cy="258.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="291.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">8</text>
+<circle cx="469.0" cy="258.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="469.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">12</text>
+<circle cx="647.0" cy="258.0" r="17" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.4"/>
+<text x="647.0" y="263.0" font-family="ui-monospace,Menlo,monospace" font-size="13" fill="#1e293b" text-anchor="middle">16</text>
+<line x1="24.0" y1="298.0" x2="736.0" y2="298.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="318.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="322.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">2</text>
+<text x="56.0" y="323.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">Inorder traversal visits 4,6,8,10,12,14,16 in sorted order. Carry a 'prev' pointer:</text>
+<text x="56.0" y="342.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">each visited node links prev.Right = node, node.Left = prev. The list builds itself</text>
+<text x="56.0" y="361.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">in visit order.</text>
+<rect x="24.0" y="377.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="51.0" y="400.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">4</text>
+<line x1="78.0" y1="395.0" x2="102.0" y2="395.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="377.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="135.0" y="400.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">6</text>
+<line x1="162.0" y1="395.0" x2="186.0" y2="395.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="377.0" width="54.0" height="36.0" rx="6" fill="#fef3c7" stroke="#d97706" stroke-width="1.2"/>
+<text x="219.0" y="400.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">8</text>
+<line x1="240.0" y1="395.0" x2="262.0" y2="395.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="274.0" y="400.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b" text-anchor="middle">∅</text>
+<line x1="24.0" y1="427.0" x2="736.0" y2="427.0" stroke="#e2e8f0" stroke-width="1"/>
+<circle cx="35.0" cy="447.0" r="11" fill="#2563eb" stroke="#2563eb" stroke-width="1.4"/>
+<text x="35.0" y="451.5" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="12" fill="#ffffff" text-anchor="middle" font-weight="600">3</text>
+<text x="56.0" y="452.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">After the walk, close the circle: head.Left = tail, tail.Right = head. Same nodes,</text>
+<text x="56.0" y="471.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="13.5" fill="#1e293b" text-anchor="start">same memory — only the meaning of the two pointers changed.</text>
+<rect x="24.0" y="487.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="51.0" y="510.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">4</text>
+<line x1="78.0" y1="505.0" x2="102.0" y2="505.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="108.0" y="487.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="135.0" y="510.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">6</text>
+<line x1="162.0" y1="505.0" x2="186.0" y2="505.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="192.0" y="487.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="219.0" y="510.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">8</text>
+<line x1="246.0" y1="505.0" x2="270.0" y2="505.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="276.0" y="487.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="303.0" y="510.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">10</text>
+<line x1="330.0" y1="505.0" x2="354.0" y2="505.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="360.0" y="487.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="387.0" y="510.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">12</text>
+<line x1="414.0" y1="505.0" x2="438.0" y2="505.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="444.0" y="487.0" width="54.0" height="36.0" rx="6" fill="#eef2f7" stroke="#94a3b8" stroke-width="1.2"/>
+<text x="471.0" y="510.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">14</text>
+<line x1="498.0" y1="505.0" x2="522.0" y2="505.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<rect x="528.0" y="487.0" width="54.0" height="36.0" rx="6" fill="#dcfce7" stroke="#16a34a" stroke-width="1.2"/>
+<text x="555.0" y="510.0" font-family="ui-monospace,Menlo,monospace" font-size="14" fill="#1e293b" text-anchor="middle">16</text>
+<line x1="576.0" y1="505.0" x2="598.0" y2="505.0" stroke="#94a3b8" stroke-width="1.6" marker-end="url(#arr)"/>
+<text x="610.0" y="510.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="16" fill="#64748b" text-anchor="middle">∅</text>
+<text x="380.0" y="549.0" font-family="-apple-system,Segoe UI,Helvetica,Arial,sans-serif" font-size="10" fill="#94a3b8" text-anchor="middle">github.com/Sreenivas-Sadhu-Prabhakara · dsa series</text>
+</svg>
